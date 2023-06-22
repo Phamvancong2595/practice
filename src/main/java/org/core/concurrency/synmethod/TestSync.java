@@ -1,0 +1,2 @@
+package org.core.concurrency.synmethod;public class TestSync {
+}
