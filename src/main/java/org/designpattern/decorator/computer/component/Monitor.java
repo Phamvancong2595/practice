@@ -1,7 +1,8 @@
-package org.designpattern.decorator.computer;
+package main.java.org.designpattern.decorator.computer.component;
 
-import org.designpattern.decorator.computer.base.ComponentDecorator;
-import org.designpattern.decorator.computer.base.Computer;
+
+import main.java.org.designpattern.decorator.computer.base.ComponentDecorator;
+import main.java.org.designpattern.decorator.computer.base.Computer;
 
 public class Monitor extends ComponentDecorator {
     Computer computer;
@@ -11,7 +12,8 @@ public class Monitor extends ComponentDecorator {
         this.computer = c;
     }
 
-    public String desciption() {
-        return computer.description() + "and a monitor";
+    @Override
+    public String description() {
+        return computer.description() + "add a monitor ";
     }
 }

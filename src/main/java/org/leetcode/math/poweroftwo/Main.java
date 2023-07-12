@@ -1,2 +1,15 @@
-package org.leetcode.math.poweroftwo;public class Main {
+package main.java.org.leetcode.math.poweroftwo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public boolean isPowerOfTwo(int n) {
+        if(n == 0) return false;
+        while(n != 1) {
+            if(n %2 != 0) return false;
+            n /= 2;
+        }
+        return true;
+    }
 }

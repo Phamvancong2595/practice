@@ -1,4 +1,4 @@
-package org.hashtable.consistentstring;
+package main.java.org.leetcode.hashtable.consistentstring;
 
 import java.util.Collections;
 import java.util.HashSet;

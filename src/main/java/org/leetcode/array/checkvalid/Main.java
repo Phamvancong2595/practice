@@ -1,4 +1,4 @@
-package org.array.checkvalid;
+package main.java.org.leetcode.array.checkvalid;
 
 import java.util.HashSet;
 import java.util.Set;

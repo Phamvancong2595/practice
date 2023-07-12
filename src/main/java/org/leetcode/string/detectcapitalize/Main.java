@@ -1,4 +1,4 @@
-package org.string.detectcapitalize;
+package main.java.org.leetcode.string.detectcapitalize;
 
 public class Main {
     public boolean detectCapitalUse(String word) {

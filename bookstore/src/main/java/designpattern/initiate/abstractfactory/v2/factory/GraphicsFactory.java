@@ -1,6 +1,6 @@
-package designpattern.abstractfactory.v2.factory;
+package designpattern.initiate.abstractfactory.v2.factory;
 
-import designpattern.abstractfactory.v2.product.Graphics;
+import designpattern.initiate.abstractfactory.v2.product.Graphics;
 
 public interface GraphicsFactory {
     Graphics newGraphics();

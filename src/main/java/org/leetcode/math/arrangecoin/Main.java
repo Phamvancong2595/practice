@@ -1,11 +1,19 @@
-package org.leetcode.math.reversbits;
+package main.java.org.leetcode.math.arrangecoin;
 
 public class Main {
     // you need treat n as an unsigned value
-    public long reverseBits(long n) {
-        int c = 0;
+    public int arrangeCoins(int n) {
         long res = 0;
-
-        return res;
+        long l = 0;
+        long r = n;
+        long m;
+        while (l <= r) {
+            m = l + (r - l) / 2;
+            res = m * (m + 1) / 2;
+            if (res == n) return (int) m;
+            if (res < n) l = m + 1;
+            else r = m - 1;
+        }
+        return (int)r;
     }
 }

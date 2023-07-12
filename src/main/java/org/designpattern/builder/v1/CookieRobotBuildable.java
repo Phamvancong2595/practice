@@ -1,9 +1,8 @@
-package org.designpattern.builder;
+package main.java.org.designpattern.builder.v1;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
-public class CookieRobotBuildable implements RobotBuildable{
+public class CookieRobotBuildable implements RobotBuildable {
     ArrayList<Integer> actions;
     public CookieRobotBuildable() {
 

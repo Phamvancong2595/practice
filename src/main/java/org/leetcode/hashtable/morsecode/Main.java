@@ -1,4 +1,4 @@
-package org.hashtable.morsecode;
+package main.java.org.leetcode.hashtable.morsecode;
 
 import java.util.HashMap;
 import java.util.HashSet;

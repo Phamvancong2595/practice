@@ -1,4 +1,4 @@
-package designpattern.builder.v2;
+package designpattern.initiate.builder.v2;
 
 import java.time.LocalDateTime;
 public class Document {

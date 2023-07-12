@@ -1,4 +1,4 @@
-package org.designpattern.builder;
+package main.java.org.designpattern.builder.v1;
 
 import java.io.BufferedReader;
 import java.io.IOException;

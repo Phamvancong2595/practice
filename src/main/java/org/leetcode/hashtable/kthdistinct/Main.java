@@ -1,4 +1,4 @@
-package org.hashtable.kthdistinct;
+package main.java.org.leetcode.hashtable.kthdistinct;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,2 +1,5 @@
-package designpattern.behavior.command.v2;public interface Command {
+package designpattern.behavior.command.v2;
+
+public interface Command {
+    void execute();
 }

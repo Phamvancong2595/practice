@@ -1,4 +1,4 @@
-package org.string.countmatches;
+package main.java.org.leetcode.string.countmatches;
 
 public class Element {
    public static final String TYPE = "type";

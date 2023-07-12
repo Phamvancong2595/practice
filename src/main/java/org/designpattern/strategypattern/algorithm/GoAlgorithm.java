@@ -1,4 +1,4 @@
-package org.designpattern.strategypattern;
+package main.java.org.designpattern.strategypattern.algorithm;
 
 public interface GoAlgorithm {
     void go();

@@ -1,6 +1,6 @@
-package org.designpattern.decorator.test.base;
+package main.java.org.designpattern.decorator.milktea.base;
 
-public class MilkTea implements IMilkTea{
+public class MilkTea {
 
     public double cost() {
         return 5.0;

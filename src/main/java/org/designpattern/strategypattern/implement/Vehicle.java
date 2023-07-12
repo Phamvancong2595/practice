@@ -1,4 +1,7 @@
-package org.designpattern.strategypattern;
+package main.java.org.designpattern.strategypattern.implement;
+
+
+import main.java.org.designpattern.strategypattern.algorithm.GoAlgorithm;
 
 public abstract class Vehicle {
     private GoAlgorithm goAlgorithm;

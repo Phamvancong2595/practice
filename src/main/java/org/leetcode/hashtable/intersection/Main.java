@@ -1,4 +1,4 @@
-package org.hashtable.intersection;
+package main.java.org.leetcode.hashtable.intersection;
 
 import java.util.*;
 

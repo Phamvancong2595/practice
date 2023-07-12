@@ -1,7 +1,9 @@
-package app.factory;
+package factory;
 
-import app.entity.Category;
+import builder.CategoryBuilder;
+import entity.Category;
 
 public interface CategoryFactory {
     Category newCategory(String name);
+    CategoryBuilder newCategoryBuilder();
 }

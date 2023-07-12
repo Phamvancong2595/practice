@@ -1,15 +1,18 @@
-package org.designpattern.decorator.milktea.decorator;
+package main.java.org.designpattern.decorator.milktea.topping;
 
-import org.designpattern.decorator.milktea.base.IMilkTea;
-import org.designpattern.decorator.milktea.base.MilkTeaDecorator;
+
+import main.java.org.designpattern.decorator.milktea.base.MilkTea;
+import main.java.org.designpattern.decorator.milktea.base.MilkTeaDecorator;
 
 public class WhiteBubble extends MilkTeaDecorator {
-    protected WhiteBubble(IMilkTea inner) {
-        super(inner);
+  private MilkTea milkTea;
+
+    public WhiteBubble(MilkTea milkTea) {
+        this.milkTea = milkTea;
     }
 
     @Override
     public double cost() {
-        return 1.5 + super.cost();
+        return milkTea.cost() + 30;
     }
 }

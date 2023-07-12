@@ -1,4 +1,4 @@
-package org.string.interpret;
+package main.java.org.leetcode.string.interpret;
 
 public class Main {
     public String interpret(String command) {

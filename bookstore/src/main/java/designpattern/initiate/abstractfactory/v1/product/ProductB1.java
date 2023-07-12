@@ -1,6 +1,4 @@
-package designpattern.abstractfactory.v1.product;
-
-import designpattern.abstractfactory.v1.product.AbstractProductB;
+package designpattern.initiate.abstractfactory.v1.product;
 
 public class ProductB1 extends AbstractProductB {
 }

@@ -1,4 +1,4 @@
-package org.string.makegood;
+package main.java.org.leetcode.string.makegood;
 
 import java.util.Stack;
 import java.util.zip.CheckedInputStream;

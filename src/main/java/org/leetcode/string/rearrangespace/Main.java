@@ -1,4 +1,4 @@
-package org.string.rearrangespace;
+package main.java.org.leetcode.string.rearrangespace;
 
 public class Main {
     public String reorderSpaces(String text) {

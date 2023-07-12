@@ -1,15 +1,18 @@
-package org.designpattern.decorator.milktea.decorator;
+package main.java.org.designpattern.decorator.milktea.topping;
 
-import org.designpattern.decorator.milktea.base.IMilkTea;
-import org.designpattern.decorator.milktea.base.MilkTeaDecorator;
+
+import main.java.org.designpattern.decorator.milktea.base.MilkTea;
+import main.java.org.designpattern.decorator.milktea.base.MilkTeaDecorator;
 
 public class EggPudding extends MilkTeaDecorator {
-    public EggPudding(IMilkTea inner) {
-        super(inner);
+   private MilkTea milkTea;
+
+    public EggPudding(MilkTea milkTea) {
+        this.milkTea = milkTea;
     }
 
     @Override
     public double cost() {
-        return 5.0 + super.cost();
+        return milkTea.cost() + 10.0;
     }
 }

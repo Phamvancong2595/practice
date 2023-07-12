@@ -1,15 +1,16 @@
-package org.designpattern.decorator.test;
+package main.java.org.designpattern.decorator.milktea.base;
 
-import org.designpattern.decorator.test.base.IMilkTea;
-import org.designpattern.decorator.test.base.MilkTea;
-import org.designpattern.decorator.test.decorator.BlackSugar;
-import org.designpattern.decorator.test.decorator.Bubble;
-import org.designpattern.decorator.test.decorator.EggPudding;
-import org.designpattern.decorator.test.decorator.FruitPudding;
+
+import main.java.org.designpattern.decorator.milktea.topping.*;
 
 public class Main {
     public static void main(String[] args) {
-        IMilkTea ourMiltea = new EggPudding(new FruitPudding(new BlackSugar(new Bubble(new MilkTea()))));
-        System.out.println(ourMiltea.cost());
+        MilkTea milkTea = new MilkTea();
+        milkTea = new EggPudding(milkTea);
+        milkTea = new BlackSugar(milkTea);
+        milkTea = new Bubble(milkTea);
+        milkTea = new FruitPudding(milkTea);
+        milkTea = new WhiteBubble(milkTea);
+        System.out.println(milkTea.cost());
     }
 }

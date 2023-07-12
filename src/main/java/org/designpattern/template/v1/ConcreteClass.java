@@ -1,4 +1,4 @@
-package org.designpattern.template;
+package main.java.org.designpattern.template.v1;
 
 public class ConcreteClass extends AbstractClass {
 

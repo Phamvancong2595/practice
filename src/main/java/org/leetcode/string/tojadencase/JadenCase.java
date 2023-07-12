@@ -1,4 +1,4 @@
-package org.string.tojadencase;
+package main.java.org.leetcode.string.tojadencase;
 
 public class JadenCase {
 

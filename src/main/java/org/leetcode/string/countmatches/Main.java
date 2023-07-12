@@ -1,4 +1,4 @@
-package org.string.countmatches;
+package main.java.org.leetcode.string.countmatches;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package app.entity;
+package entity;
 
-public class Category {
+public class Category implements Cloneable{
     private long id;
     private String name;
 
@@ -18,5 +18,12 @@ public class Category {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public Category clone() {
+        final Category category = new Category();
+        category.name = name;
+        return  category;
     }
 }

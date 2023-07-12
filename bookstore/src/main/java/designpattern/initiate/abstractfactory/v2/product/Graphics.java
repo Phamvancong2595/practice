@@ -1,4 +1,4 @@
-package designpattern.abstractfactory.v2.product;
+package designpattern.initiate.abstractfactory.v2.product;
 
 public interface Graphics {
     void draw();

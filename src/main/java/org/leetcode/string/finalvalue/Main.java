@@ -1,4 +1,4 @@
-package org.string.finalvalue;
+package main.java.org.leetcode.string.finalvalue;
 
 public class Main {
     public int finalValueAfterOperations(String[] operations) {

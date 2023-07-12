@@ -1,4 +1,4 @@
-package designpattern.factorymethod;
+package designpattern.initiate.factorymethod;
 
 public abstract class ProductOderCreater {
     public void orderProduct(String productName, long amount){

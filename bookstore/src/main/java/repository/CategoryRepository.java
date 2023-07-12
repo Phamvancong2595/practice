@@ -1,7 +1,6 @@
-package repository.category;
+package repository;
 
-import app.entity.Category;
-import repository.Repository;
+import entity.Category;
 
 public interface CategoryRepository extends Repository<Category> {
 }

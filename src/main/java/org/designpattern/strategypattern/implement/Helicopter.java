@@ -1,6 +1,9 @@
-package org.designpattern.strategypattern;
+package main.java.org.designpattern.strategypattern.implement;
 
-public class Helicopter extends Vehicle{
+
+import main.java.org.designpattern.strategypattern.algorithm.GoByFlying;
+
+public class Helicopter extends Vehicle {
     public Helicopter(){
         setGoAlgorithm(new GoByFlying());
     }

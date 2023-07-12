@@ -1,4 +1,4 @@
-package org.math.countingbit;
+package main.java.org.leetcode.math.countingbit;
 
 import java.util.stream.IntStream;
 

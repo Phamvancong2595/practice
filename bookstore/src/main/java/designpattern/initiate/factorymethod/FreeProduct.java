@@ -1,4 +1,4 @@
-package designpattern.factorymethod;
+package designpattern.initiate.factorymethod;
 
 public class FreeProduct extends Product{
     @Override

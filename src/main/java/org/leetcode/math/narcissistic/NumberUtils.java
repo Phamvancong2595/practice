@@ -1,4 +1,4 @@
-package org.math.narcissistic;
+package main.java.org.leetcode.math.narcissistic;
 
 public class NumberUtils {
     public static boolean isNarcissistic(int number) {

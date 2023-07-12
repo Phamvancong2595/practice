@@ -1,6 +1,11 @@
 package org.hackerrank.problemsolving.PlusMinus;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
-class PlusMinus {
-  
+
+public class PlusMinus {
+    @Test public void test1() {
+
+    }
 }

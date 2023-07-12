@@ -1,7 +1,9 @@
-package app.factory;
+package factory;
 
-import app.entity.Book;
+import builder.BookBuilder;
+import entity.Book;
 
 public interface BookFactory {
     Book newBook(String name);
+    BookBuilder newBookBuilder();
 }

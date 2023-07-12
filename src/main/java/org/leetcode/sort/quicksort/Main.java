@@ -1,6 +1,7 @@
-package org.sort.quicksort;
+package main.java.org.leetcode.sort.quicksort;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -36,5 +37,20 @@ public class Main {
         arr[j] = temp;
     }
 
-
+    public static String superReducedString(String s) {
+        // Write your code here
+        Stack<Character> c = new Stack<>();
+        for(char a: s.toCharArray()) {
+            if(!c.isEmpty()) {
+                if(c.peek() != a) {
+                    c.add(a);
+                } else {
+                    c.pop();
+                }
+            } else {
+                c.add(a);
+            }
+        }
+        return "";
+    }
 }

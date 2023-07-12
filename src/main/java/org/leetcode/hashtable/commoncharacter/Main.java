@@ -1,4 +1,4 @@
-package org.hashtable.commoncharacter;
+package main.java.org.leetcode.hashtable.commoncharacter;
 
 import java.util.*;
 

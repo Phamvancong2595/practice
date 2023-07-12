@@ -1,7 +1,6 @@
-package repository.book;
+package repository;
 
-import app.entity.Book;
-import repository.Repository;
+import entity.Book;
 
 public interface BookRepository extends Repository<Book> {
 }

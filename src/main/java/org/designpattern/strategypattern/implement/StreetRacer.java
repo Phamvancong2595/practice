@@ -1,6 +1,9 @@
-package org.designpattern.strategypattern;
+package main.java.org.designpattern.strategypattern.implement;
 
-public class StreetRacer extends Vehicle{
+
+import main.java.org.designpattern.strategypattern.algorithm.GoByDrivingAlgorithm;
+
+public class StreetRacer extends Vehicle {
     public StreetRacer(){
         setGoAlgorithm(new GoByDrivingAlgorithm());
     }

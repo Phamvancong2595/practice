@@ -1,6 +1,9 @@
-package org.designpattern.strategypattern;
+package main.java.org.designpattern.strategypattern.implement;
 
-public class FomularOne extends Vehicle{
+
+import main.java.org.designpattern.strategypattern.algorithm.GoByDrivingAlgorithm;
+
+public class FomularOne extends Vehicle {
     public FomularOne(){
         setGoAlgorithm(new GoByDrivingAlgorithm());
     }

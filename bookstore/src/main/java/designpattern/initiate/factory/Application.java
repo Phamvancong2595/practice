@@ -1,4 +1,4 @@
-package designpattern.factory;
+package designpattern.initiate.factory;
 
 public class Application {
     public interface Product{}

@@ -1,4 +1,4 @@
-package designpattern.prototype.v2;
+package designpattern.initiate.prototype.v2;
 
 import java.time.LocalDateTime;
 

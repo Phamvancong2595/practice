@@ -1,4 +1,4 @@
-package org.string.tolowercase;
+package main.java.org.leetcode.string.tolowercase;
 
 public class Main {
     public String toLowerCase(String s) {

@@ -1,4 +1,4 @@
-package org.string.maxpower;
+package main.java.org.leetcode.string.maxpower;
 
 public class Main {
     public int maxPower(String s) {

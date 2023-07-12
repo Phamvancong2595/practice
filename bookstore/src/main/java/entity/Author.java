@@ -1,22 +1,17 @@
-package app.entity;
+package entity;
 
-public class Author {
+import lombok.Data;
+
+@Data
+public class Author implements  Cloneable{
     private long id;
     private String name;
+    private String code;
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    @Override
+    public Author clone() {
+        final Author author = new Author();
+        author.name = name;
+        return author;
     }
 }

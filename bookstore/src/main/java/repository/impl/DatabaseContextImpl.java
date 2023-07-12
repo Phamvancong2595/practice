@@ -1,12 +1,10 @@
-package repository.database;
+package repository.impl;
 
-import app.entity.Author;
-import app.entity.Book;
-import app.entity.Category;
+import entity.Author;
+import entity.Book;
+import entity.Category;
 import repository.Repository;
-import repository.author.AuthorRepositoryImpl;
-import repository.book.BookRepositoryImpl;
-import repository.category.CategoryRepositoryImpl;
+import repository.DatabaseContext;
 
 public class DatabaseContextImpl implements DatabaseContext {
     @Override

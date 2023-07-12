@@ -1,7 +1,7 @@
-package designpattern.abstractfactory.v1.factory;
+package designpattern.initiate.abstractfactory.v1.factory;
 
-import designpattern.abstractfactory.v1.product.AbstractProductA;
-import designpattern.abstractfactory.v1.product.AbstractProductB;
+import designpattern.initiate.abstractfactory.v1.product.AbstractProductA;
+import designpattern.initiate.abstractfactory.v1.product.AbstractProductB;
 
 public interface AbstractFactory {
     AbstractProductA newProductA();

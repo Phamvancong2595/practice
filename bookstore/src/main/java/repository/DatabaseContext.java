@@ -1,4 +1,4 @@
-package repository.database;
+package repository;
 
 import repository.Repository;
 

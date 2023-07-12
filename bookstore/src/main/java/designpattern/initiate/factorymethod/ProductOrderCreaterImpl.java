@@ -1,4 +1,4 @@
-package designpattern.factorymethod;
+package designpattern.initiate.factorymethod;
 
 public class ProductOrderCreaterImpl extends ProductOderCreater{
     private static final long DEFAULT_PRICE = 1000;

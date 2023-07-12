@@ -1,4 +1,4 @@
-package designpattern.singleton.v2;
+package designpattern.initiate.singleton.v2;
 
 public class LazyInitSingletonSlowly {
     private static LazyInitSingletonSlowly instance;

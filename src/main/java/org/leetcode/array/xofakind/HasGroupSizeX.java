@@ -1,4 +1,4 @@
-package org.array.xofakind;
+package main.java.org.leetcode.array.xofakind;
 
 import java.util.*;
 

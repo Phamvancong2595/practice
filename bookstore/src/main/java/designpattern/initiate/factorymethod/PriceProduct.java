@@ -1,4 +1,4 @@
-package designpattern.factorymethod;
+package designpattern.initiate.factorymethod;
 
 import lombok.Setter;
 

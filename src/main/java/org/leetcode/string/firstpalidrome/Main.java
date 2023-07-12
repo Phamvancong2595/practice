@@ -1,4 +1,4 @@
-package org.string.firstpalidrome;
+package main.java.org.leetcode.string.firstpalidrome;
 
 public class Main {
     public String firstPalindrome(String[] words) {

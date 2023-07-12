@@ -1,4 +1,4 @@
-package org.array.relativerank;
+package main.java.org.leetcode.array.relativerank;
 
 import java.util.*;
 

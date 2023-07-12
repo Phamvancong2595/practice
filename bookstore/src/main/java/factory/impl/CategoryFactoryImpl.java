@@ -1,7 +1,8 @@
-package app.factory.impl;
+package factory.impl;
 
-import app.entity.Category;
-import app.factory.CategoryFactory;
+import builder.CategoryBuilder;
+import entity.Category;
+import factory.CategoryFactory;
 
 public class CategoryFactoryImpl implements CategoryFactory {
     @Override
@@ -9,5 +10,10 @@ public class CategoryFactoryImpl implements CategoryFactory {
         final Category category = new Category();
         category.setName(name);
         return category;
+    }
+
+    @Override
+    public CategoryBuilder newCategoryBuilder() {
+        return new CategoryBuilder();
     }
 }

@@ -1,2 +1,5 @@
-package handler;public interface Handler {
+package handler;
+
+public interface Handler<T, R> {
+    R handle(T input) throws Exception;
 }

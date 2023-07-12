@@ -1,4 +1,4 @@
-package org.string.thousandseparator;
+package main.java.org.leetcode.string.thousandseparator;
 
 public class Main {
     public String thousandSeparator(int n) {

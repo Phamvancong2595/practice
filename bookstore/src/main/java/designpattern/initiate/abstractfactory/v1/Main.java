@@ -1,10 +1,10 @@
-package designpattern.abstractfactory.v1;
+package designpattern.initiate.abstractfactory.v1;
 
-import designpattern.abstractfactory.v1.factory.AbstractFactory;
-import designpattern.abstractfactory.v1.factory.ConcreteFactory1;
-import designpattern.abstractfactory.v1.factory.ConcreteFactory2;
-import designpattern.abstractfactory.v1.product.AbstractProductA;
-import designpattern.abstractfactory.v1.product.AbstractProductB;
+import designpattern.initiate.abstractfactory.v1.factory.AbstractFactory;
+import designpattern.initiate.abstractfactory.v1.factory.ConcreteFactory1;
+import designpattern.initiate.abstractfactory.v1.factory.ConcreteFactory2;
+import designpattern.initiate.abstractfactory.v1.product.AbstractProductA;
+import designpattern.initiate.abstractfactory.v1.product.AbstractProductB;
 
 public class Main {
     public static void main(String[] args) {

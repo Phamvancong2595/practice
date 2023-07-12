@@ -1,4 +1,4 @@
-package designpattern.abstractfactory.v1.product;
+package designpattern.initiate.abstractfactory.v1.product;
 
 public abstract class AbstractProductB {
 }

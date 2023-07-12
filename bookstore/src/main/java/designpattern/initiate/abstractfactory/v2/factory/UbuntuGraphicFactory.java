@@ -1,7 +1,7 @@
-package designpattern.abstractfactory.v2.factory;
+package designpattern.initiate.abstractfactory.v2.factory;
 
-import designpattern.abstractfactory.v2.product.Graphics;
-import designpattern.abstractfactory.v2.product.UbuntuGraphics;
+import designpattern.initiate.abstractfactory.v2.product.Graphics;
+import designpattern.initiate.abstractfactory.v2.product.UbuntuGraphics;
 
 public class UbuntuGraphicFactory implements GraphicsFactory{
     @Override

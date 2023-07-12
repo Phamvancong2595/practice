@@ -1,4 +1,4 @@
-package org.string.defangingipaddress;
+package main.java.org.leetcode.string.defangingipaddress;
 
 public class Main {
     public String defangIPaddr(String address) {

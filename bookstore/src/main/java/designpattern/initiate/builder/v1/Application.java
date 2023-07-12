@@ -1,4 +1,4 @@
-package designpattern.builder.v1;
+package designpattern.initiate.builder.v1;
 
 import lombok.AllArgsConstructor;
 import lombok.Setter;

@@ -1,2 +1,5 @@
-package builder;public interface Builder {
+package builder;
+
+public interface Builder <T>{
+    T build();
 }

@@ -1,7 +1,8 @@
-package app.factory.impl;
+package factory.impl;
 
-import app.entity.Book;
-import app.factory.BookFactory;
+import builder.BookBuilder;
+import entity.Book;
+import factory.BookFactory;
 
 public class BookFactoryImpl implements BookFactory {
     @Override
@@ -9,5 +10,10 @@ public class BookFactoryImpl implements BookFactory {
         final Book book = new Book();
         book.setName(name);
         return book;
+    }
+
+    @Override
+    public BookBuilder newBookBuilder() {
+        return new BookBuilder();
     }
 }

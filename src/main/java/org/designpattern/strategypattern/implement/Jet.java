@@ -1,6 +1,9 @@
-package org.designpattern.strategypattern;
+package main.java.org.designpattern.strategypattern.implement;
 
-public class Jet extends Vehicle{
+
+import main.java.org.designpattern.strategypattern.algorithm.GoByFlyingFast;
+
+public class Jet extends Vehicle {
     public Jet(){
         setGoAlgorithm(new GoByFlyingFast());
     }

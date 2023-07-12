@@ -1,7 +1,6 @@
-package repository.author;
+package repository;
 
-import app.entity.Author;
-import repository.Repository;
+import entity.Author;
 
 public interface AuthorRepository extends Repository<Author> {
 }

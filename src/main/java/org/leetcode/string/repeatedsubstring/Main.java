@@ -1,4 +1,4 @@
-package org.string.repeatedsubstring;
+package main.java.org.leetcode.string.repeatedsubstring;
 
 public class Main {
     public boolean repeatedSubstringPattern(String s) {

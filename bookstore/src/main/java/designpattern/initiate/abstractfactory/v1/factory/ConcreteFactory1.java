@@ -1,9 +1,9 @@
-package designpattern.abstractfactory.v1.factory;
+package designpattern.initiate.abstractfactory.v1.factory;
 
-import designpattern.abstractfactory.v1.product.AbstractProductA;
-import designpattern.abstractfactory.v1.product.AbstractProductB;
-import designpattern.abstractfactory.v1.product.ProductA1;
-import designpattern.abstractfactory.v1.product.ProductB1;
+import designpattern.initiate.abstractfactory.v1.product.AbstractProductA;
+import designpattern.initiate.abstractfactory.v1.product.AbstractProductB;
+import designpattern.initiate.abstractfactory.v1.product.ProductA1;
+import designpattern.initiate.abstractfactory.v1.product.ProductB1;
 
 public class ConcreteFactory1 implements AbstractFactory {
     @Override

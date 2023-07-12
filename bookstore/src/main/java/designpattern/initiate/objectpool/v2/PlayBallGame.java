@@ -1,4 +1,4 @@
-package designpattern.objectpool.v2;
+package designpattern.initiate.objectpool.v2;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

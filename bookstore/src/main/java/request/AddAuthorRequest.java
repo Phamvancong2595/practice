@@ -1,2 +1,8 @@
-package request;public class AddAuthorRequest {
+package request;
+
+import lombok.Data;
+
+@Data
+public class AddAuthorRequest {
+    private String authorName;
 }
