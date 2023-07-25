@@ -25,7 +25,7 @@ public interface Repository<E> {
                 .getCommandProvider()
                 .provide(IterableCommand.class);
         final Iterable<E> iterable = command
-                .entitiType(getEntityType())
+                .entityType(getEntityType())
                 .execute();
         for (E entity: iterable) {
             consumer.accept(entity);
