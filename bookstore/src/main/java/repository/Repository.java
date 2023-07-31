@@ -2,6 +2,7 @@ package repository;
 
 import app.BookApplication;
 import com.tvd12.ezyfox.reflect.EzyGenerics;
+import command.FindByIdCommand;
 import command.IterableCommand;
 import command.SaveCommand;
 
@@ -39,5 +40,15 @@ public interface Repository<E> {
 
     default Class<E> getEntityType() {
         return EzyGenerics.getGenericInterfacesArguments(getClass().getInterfaces()[0], Repository.class,1)[0];
+    }
+    default E findById(long id) throws Exception {
+        final FindByIdCommand<E> command = BookApplication
+                .getInstance()
+                .getCommandProvider()
+                .provide(FindByIdCommand.class);
+        return command
+                .entityType(getEntityType())
+                .entityId(id)
+                .execute();
     }
 }

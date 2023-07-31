@@ -6,6 +6,7 @@ import lombok.Data;
 public class Author implements  Cloneable{
     private long id;
     private String name;
+    private String level;
     private String code;
 
     @Override

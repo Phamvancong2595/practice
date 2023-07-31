@@ -20,6 +20,7 @@ import repository.impl.ConnectionFactoryImpl;
 import repository.DatabaseContext;
 import repository.impl.DatabaseContextImpl;
 import service.ServiceProvider;
+import strategy.StrategyProvide;
 
 public final class BookApplication {
     @Getter
@@ -36,6 +37,7 @@ public final class BookApplication {
     private final InterpreterProvider interpreterProvider;
     @Getter
     private final ServiceProvider serviceProvider;
+    @Getter final StrategyProvide strategyProvide;
     private static final BookApplication INSTANCE = new BookApplication();
 
     private BookApplication() {
@@ -46,6 +48,7 @@ public final class BookApplication {
         commandProvider = new CommandProvider();
         interpreterProvider = new InterpreterProvider();
         serviceProvider = new ServiceProvider();
+        strategyProvide = new StrategyProvide();
     }
 
     public static BookApplication getInstance() {
