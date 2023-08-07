@@ -1,19 +1,15 @@
 package command;
 
-import app.BookApplication;
-import designpattern.behavior.iterator.v1.Application;
 import lombok.AllArgsConstructor;
 import observer.VoidNoReturnObserver;
-import pool.ConnectionPool;
 
 import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.Iterator;
 
-public class IterableCommand<E> implements Command<Iterable<E>> {
+public class IterableCommand<E> extends AbstractCommand<Iterable<E>> {
     private Class<E> entityType;
 
     public IterableCommand<E> entityType(Class<E> entityType) {
@@ -22,28 +18,30 @@ public class IterableCommand<E> implements Command<Iterable<E>> {
     }
 
     @Override
-    public Iterable<E> execute() throws Exception {
+    protected PreparedStatement createStatement(
+            Connection connection
+    ) throws Exception {
         final String tableName = entityType.getSimpleName();
         final String query = "SELECT * FROM " + tableName + " ORDER BY id DESC";
-        final ConnectionPool connectionPool = BookApplication
-                .getInstance()
-                .getConnectionPool();
-        final Connection connection = connectionPool.provide();
-        final PreparedStatement statement = connection
-                .prepareStatement(query);
+        return connection.prepareStatement(query);
+    }
+
+    @Override
+    protected Iterable<E> executeStatement(
+            PreparedStatement statement,
+            VoidNoReturnObserver finishObserver
+    ) throws Exception {
         final ResultSet resultSet = statement.executeQuery();
         return () -> new EntityIterator<E>(
                 entityType,
                 resultSet,
-                () -> {
-                    try {
-                        statement.close();
-                    } catch (SQLException e) {
-                        // do nothing
-                    }
-                    connectionPool.pushBack(connection);
-                }
+                finishObserver
         );
+    }
+
+    @Override
+    protected boolean closeStatementAsSoonAsPossible() {
+        return false;
     }
 
     @AllArgsConstructor
@@ -73,7 +71,7 @@ public class IterableCommand<E> implements Command<Iterable<E>> {
             try {
                 final E entity = entityType.newInstance();
                 final Field[] fields = entityType.getDeclaredFields();
-                for (int i = 0 ; i < fields.length ; ++i) {
+                for (int i = 0; i < fields.length; ++i) {
                     fields[i].setAccessible(true);
                     fields[i].set(entity, resultSet.getObject(i + 1));
                 }
